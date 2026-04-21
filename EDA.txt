@@ -1,0 +1,16 @@
+Event-Driven Architecture (EDA) in System Design is a design pattern where services communicate by producing and consuming events, instead of directly calling each other.
+
+This is one of the most important FAANG-level system design patterns, heavily used in systems like:
+
+Amazon → Order processing
+Netflix → Media processing
+Uber Technologies → Ride matching
+Airbnb → Booking workflow
+
+It is commonly implemented using:
+
+Apache Kafka
+RabbitMQ
+Amazon SNS
+Amazon SQS
+
