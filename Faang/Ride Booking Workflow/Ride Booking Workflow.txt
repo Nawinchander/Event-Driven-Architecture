@@ -1,1 +1,16 @@
 Ride Booking Workflow
+
+Ride Booking Workflow (Uber-like)
+
+When ride requested:
+
+RideRequested
+
+Consumers:
+
+Driver Matching Service
+Pricing Service
+ETA Service
+Notification Service
+
+Ride Service → Kafka → Driver/ETA/Pricing services
