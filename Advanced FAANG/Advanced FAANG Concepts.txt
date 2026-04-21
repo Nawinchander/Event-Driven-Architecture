@@ -40,3 +40,39 @@ Inventory updated milliseconds later
 This trades consistency for scalability.
 
 
+8. Benefits
+1. Scalability
+
+Each consumer scales separately.
+
+2. Resilience
+
+One service failure doesn’t block others.
+
+3. Loose Coupling
+
+Services communicate via events.
+
+4. Extensibility
+
+Add new consumers without changing producer.
+
+
+9. Drawbacks
+A. Debugging Complexity
+
+Hard to trace event flows.
+
+B. Eventual Consistency
+
+Data may be temporarily inconsistent.
+
+C. Duplicate Handling Needed
+
+Consumers must be idempotent.
+
+D. Ordering Issues
+
+Events may arrive out of order.
+
+
