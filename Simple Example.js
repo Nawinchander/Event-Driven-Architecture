@@ -28,3 +28,14 @@ function createOrder(order) {
 
 createOrder({ id: "ORD101" });
 
+
+/// op
+
+// Order created: ORD101
+// Processing payment for ORD101
+// Reserving inventory for ORD101
+// Sending email for ORD101
+
+
+/// This is basic EDA, but FAANG systems use Kafka/RabbitMQ instead of EventEmitter.
+
