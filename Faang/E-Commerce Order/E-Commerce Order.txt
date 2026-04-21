@@ -10,3 +10,12 @@ Inventory Service
 Shipping Service
 Notification Service
 Analytics Service
+
+User Places Order
+    ↓
+Order Service publishes OrderPlaced
+    ↓
+Kafka Topic: order-events
+    ↓
+Consumers react independently
+
