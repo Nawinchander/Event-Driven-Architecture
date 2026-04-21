@@ -14,3 +14,41 @@ RabbitMQ
 Amazon SNS
 Amazon SQS
 
+
+
+1. What is Event-Driven Architecture?
+
+Instead of:
+
+Order Service ---> Payment Service ---> Inventory Service ---> Email Service
+
+You do:-
+
+Order Service ---> "OrderCreated" Event ---> Event Bus
+                                          ---> Payment Service
+                                          ---> Inventory Service
+                                          ---> Notification Service
+
+
+2. Why EDA is used?
+
+Because it provides:
+
+A. Loose Coupling
+
+Services don’t depend on each other directly.
+
+B. Scalability
+
+Consumers scale independently.
+
+C. Asynchronous Processing
+
+No waiting for downstream systems.
+
+D. Better Fault Isolation
+
+One service failure doesn’t break the whole flow.
+
+
+
