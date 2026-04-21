@@ -19,3 +19,15 @@ Kafka Topic: order-events
     ↓
 Consumers react independently
 
+
+
+FAANG Insight:
+
+At Amazon:
+
+Order Service publishes OrderPlaced
+Multiple downstream services consume
+Services scale independently
+Retry queues handle failures
+
+This reduces latency and coupling.
