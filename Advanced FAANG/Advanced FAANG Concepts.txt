@@ -1,0 +1,42 @@
+
+Advanced FAANG Concepts in Event Driven Architecture
+
+A. Event Replay
+
+With Apache Kafka, consumers can replay old events.
+
+Useful for:
+
+rebuilding analytics
+recovering services
+B. Dead Letter Queue (DLQ)
+
+Failed events go to DLQ.
+
+OrderPlaced → Payment failed → DLQ
+
+Prevents event loss.
+
+
+C. Idempotency
+
+Consumers may receive duplicate events.
+
+Need safe handlers:
+
+if (processedEvents.has(eventId)) return;
+
+Very common FAANG interview point.
+
+D. Eventual Consistency
+
+Services update asynchronously.
+
+Meaning:
+
+Order created now
+Inventory updated milliseconds later
+
+This trades consistency for scalability.
+
+
