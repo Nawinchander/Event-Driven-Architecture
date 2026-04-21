@@ -1,0 +1,12 @@
+E-Commerce Order Pipeline (Amazon-like)
+
+When user places order:
+
+Event:
+OrderPlaced
+Consumers:
+Payment Service
+Inventory Service
+Shipping Service
+Notification Service
+Analytics Service
