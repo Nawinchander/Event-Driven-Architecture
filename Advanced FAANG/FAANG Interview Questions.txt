@@ -14,3 +14,53 @@ high throughput
 durability
 replay capability
 
+Q1: Why use event-driven architecture?
+
+Answer:
+To decouple services and enable asynchronous scalable workflows where multiple consumers react independently.
+
+Q2: What broker is used?
+
+Answer:
+Typically Apache Kafka or RabbitMQ.
+
+Kafka is preferred for:
+
+high throughput
+durability
+replay capability
+
+
+Q5: What happens if a consumer fails?
+
+Answer:
+Broker retains event, retries happen, failed events move to DLQ.
+
+Q6: Why is Kafka popular in FAANG?
+
+Because Apache Kafka supports:
+
+persistence
+replay
+partitions
+consumer groups
+high throughput
+
+11. FAANG Interview Answer Summary
+
+If interviewer asks:
+
+“How would you design order processing?”
+
+You say:
+
+Publish OrderPlaced
+Use Apache Kafka as broker
+Payment, Inventory, Notification consume independently
+Use retries + DLQ
+Ensure idempotency
+Accept eventual consistency
+Scale consumers independently
+
+That is a strong FAANG-level answer.
+
