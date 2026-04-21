@@ -1,0 +1,16 @@
+Q1: Why use event-driven architecture?
+
+Answer:
+To decouple services and enable asynchronous scalable workflows where multiple consumers react independently.
+
+Q2: What broker is used?
+
+Answer:
+Typically Apache Kafka or RabbitMQ.
+
+Kafka is preferred for:
+
+high throughput
+durability
+replay capability
+
