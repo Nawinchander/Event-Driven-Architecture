@@ -14,3 +14,15 @@ ETA Service
 Notification Service
 
 Ride Service → Kafka → Driver/ETA/Pricing services
+
+
+At Uber Technologies:
+
+Each microservice reacts independently to ride events.
+
+This allows:
+
+fast driver assignment
+real-time surge pricing
+independent scaling
+
