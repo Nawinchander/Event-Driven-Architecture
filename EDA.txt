@@ -51,4 +51,28 @@ D. Better Fault Isolation
 One service failure doesn’t break the whole flow.
 
 
+Core Components
+A. Event Producer
+
+Generates events.
+
+Example:
+
+emit("OrderCreated", orderData);
+
+B. Event Broker
+
+Routes events to consumers.
+
+Examples:
+
+Apache Kafka
+RabbitMQ
+C. Event Consumer
+
+Listens and acts.
+
+on("OrderCreated", processPayment);
+
+
 
